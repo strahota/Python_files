@@ -1,11 +1,18 @@
 def positive_numbers(numbers):
     return (str(number) for number in numbers if number >= 0)
+
+
 def negative_numbers(numbers):
     return (str(number) for number in numbers if number < 0)
+
+
 def even_numbers(numbers):
     return (str(number) for number in numbers if number % 2 == 0)
+
+
 def odd_numbers(numbers):
     return (str(number) for number in numbers if number % 2 != 0)
+
 
 numbers = [int(s) for s in input().split(", ")]
 
