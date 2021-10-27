@@ -1,3 +1,11 @@
+#броя на стаите
+number_of_rooms = int(input())
+#заетите места
+taken_chairs = ""
+#броя на хората
+number_of_people = 0
+#броя на свбободните столове
+number_of_free_chairs = 0
 all_seats_are_taken = True
 for i in range(1, number_of_rooms + 1):
     chairs = input().split()
