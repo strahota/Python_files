@@ -1,0 +1,12 @@
+print("Please, input your revenue:")
+revenue = float(input())
+print("Please, input your cost of sales:")
+cost_of_sales = float(input())
+gross_profit_margin = ((revenue - cost_of_sales) / revenue) * 100
+
+if cost_of_sales > revenue:
+    print(f"Your company is loosing money! Your gross profit margin is negative: {gross_profit_margin:.2f}%")
+if cost_of_sales == revenue:
+    print("No profit!")
+if cost_of_sales < revenue:
+    print(f"Your gross profit margin is: {gross_profit_margin:.2f}%")
